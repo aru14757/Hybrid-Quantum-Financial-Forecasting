@@ -26,21 +26,53 @@ The repository includes processed S&P 500 financial time-series data from 2021 t
 - Signal
 - Momentum
 
-### Trained Models
+---
 
-Included trained models:
+## Trained Models
 
-- LSTM+QNN
+The repository includes selected best-performing trained models for:
+
+- Binary classification
+- Multiclass classification
+- Regression forecasting
+
+### Binary Classification Models
+
+- BiLSTM
+- CNN+GRU+QNN
+- CNN+LSTM+QNN
 - GRU+QNN
+- LSTM+QNN
+
+### Multiclass Classification Models
+
+- BiLSTM
+- CNN+GRU+QNN
+- CNN+LSTM+QNN
+- GRU+QNN
+- LSTM+QNN
+
+### Regression Models
+
+- BiLSTM
+- GRU+QNN
+- LSTM+QNN
 - QENN
 - QSVM
-- QLSTM
-- QGRU
-- BiLSTM
-- CNN+QNN
-- CNN+LSTM+QNN
-- CNN+GRU+QNN
-- CNN+GRU+Attention+QNN
+
+---
+
+## Repository Structure
+
+```text
+data/
+    sp500_dataset.csv
+
+models/
+    binary classification/
+    multiclass classification/
+    regression/
+```
 
 ---
 
@@ -61,7 +93,7 @@ The LSTM+QNN model achieved the best regression performance with:
 - MAE = 78.67
 - MAPE = 1.32%
 
-The study also shows that regression-based forecasting is more suitable for trading-oriented financial applications than classification-based approaches.
+The study also demonstrates that regression-based forecasting is more suitable for trading-oriented financial applications than classification-based approaches.
 
 ---
 
